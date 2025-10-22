@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="WeaponData" load_steps=3 format=3 uid="uid://jyhojw74jbrp"]
+
+[ext_resource type="Script" uid="uid://yfjbfcxv2dp5" path="res://scripts/weapons/WeaponData.gd" id="1_8lrat"]
+[ext_resource type="PackedScene" uid="uid://bj5iuwbt5rd7p" path="res://scenes/Weapon/BasicProjectile.tscn" id="1_ykloi"]
+
+[resource]
+script = ExtResource("1_8lrat")
+weapon_id = "pistol"
+weapon_name = "Pistol"
+description = "Basic pistol with moderate damage"
+damage = 15.0
+fire_rate = 1.0
+projectiles_per_shot = 1
+spread_angle = 0.05
+projectile_speed = 600.0
+auto_aim_range = 500.0
+projectile_scene = ExtResource("1_ykloi")
+weapon_type = "ranged"
+rarity = "common"
+slot_position = Vector2(0, 0)
+metadata/_custom_type_script = "uid://yfjbfcxv2dp5"

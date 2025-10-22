@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="PlayerStats" load_steps=2 format=3 uid="uid://c1qg0tl6mrwyq"]
+
+[ext_resource type="Script" uid="uid://yt5rr5p47vhs" path="res://scripts/player/PlayerStats.gd" id="1_y6di6"]
+
+[resource]
+script = ExtResource("1_y6di6")
+base_max_speed = 75.0
+base_acceleration = 1500.0
+base_friction = 1200.0
+base_attack_power = 1.0
+base_attack_speed = 1.0
+base_crit_chance = 0.05
+base_crit_damage = 1.5
+base_vampirism = 0.0
+base_max_health = 100.0
+base_health_regeneration = 0.0
+base_armor = 0.0
+base_shield_efficiency = 1.0
+base_dodge_chance = 0.0
+base_counter_chance = 0.0
+base_counter_damage = 1.0
+base_move_speed_multiplier = 1.0
+base_pickup_multiplier = 1.0
+base_luck = 1.0
+metadata/_custom_type_script = "uid://yt5rr5p47vhs"

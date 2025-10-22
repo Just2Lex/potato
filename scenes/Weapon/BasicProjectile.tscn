@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://bj5iuwbt5rd7p"]
+
+[ext_resource type="Script" uid="uid://bjxbc7l6uluq5" path="res://scripts/weapons/BasicProjectile.gd" id="1_5pkgk"]
+[ext_resource type="Texture2D" uid="uid://cvn4chgstogb4" path="res://assets/sprites/Bullets/PistolAmmoSmall.png" id="2_7togb"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hgsh1"]
+radius = 44.0114
+
+[node name="BasicProjectile" type="Area2D"]
+script = ExtResource("1_5pkgk")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_7togb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_hgsh1")

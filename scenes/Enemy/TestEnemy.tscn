@@ -1,0 +1,84 @@
+[gd_scene load_steps=13 format=3 uid="uid://tp65ar3buyf1"]
+
+[ext_resource type="Texture2D" uid="uid://chdn0slepfgvn" path="res://assets/sprites/testEnemy/Mushroom-Run.png" id="1_bsp45"]
+[ext_resource type="Script" uid="uid://cp78tar8pcufe" path="res://scripts/enemies/TestEnemy.gd" id="1_dk2j2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dk2j2"]
+atlas = ExtResource("1_bsp45")
+region = Rect2(0, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lst72"]
+atlas = ExtResource("1_bsp45")
+region = Rect2(80, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qpp50"]
+atlas = ExtResource("1_bsp45")
+region = Rect2(160, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g2j67"]
+atlas = ExtResource("1_bsp45")
+region = Rect2(240, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jxhme"]
+atlas = ExtResource("1_bsp45")
+region = Rect2(320, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xl2mw"]
+atlas = ExtResource("1_bsp45")
+region = Rect2(400, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x6vmo"]
+atlas = ExtResource("1_bsp45")
+region = Rect2(480, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mh23f"]
+atlas = ExtResource("1_bsp45")
+region = Rect2(560, 0, 80, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bx5nm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dk2j2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lst72")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qpp50")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g2j67")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jxhme")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xl2mw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x6vmo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mh23f")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_l4sv2"]
+
+[node name="TestEnemy" type="CharacterBody2D"]
+script = ExtResource("1_dk2j2")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1, -7)
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_bx5nm")
+frame_progress = 0.663991
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_l4sv2")
+
+[node name="HealthBar" type="Node2D" parent="."]

@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://daedjtvytwjd8"]
+
+[ext_resource type="Script" uid="uid://dpoku2csmej66" path="res://scripts/weapons/WeaponBase.gd" id="1_p1adg"]
+[ext_resource type="Texture2D" uid="uid://ois2ynl1cnce" path="res://assets/sprites/Guns/Revolver.png" id="2_gah3n"]
+
+[node name="WeaponBase" type="Node2D"]
+z_index = 1
+script = ExtResource("1_p1adg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_gah3n")
+
+[node name="Muzzle" type="Marker2D" parent="."]

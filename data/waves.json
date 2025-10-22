@@ -1,0 +1,19 @@
+{
+  "waves": [
+	{
+	  "enemy_count": 10,
+	  "spawn_groups": [
+		{"enemy_type": "basic", "count": 10, "spawn_rate": 0.5}
+	  ],
+	  "duration": 60
+	},
+	{
+	  "enemy_count": 20,
+	  "spawn_groups": [
+		{"enemy_type": "basic", "count": 15, "spawn_rate": 0.8},
+		{"enemy_type": "fast", "count": 5, "spawn_rate": 0.3}
+	  ],
+	  "duration": 60
+	}
+  ]
+}
